@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.chuangshi.licai.fragment.MoneyFragment">
+
+    <RelativeLayout style="@style/title_RelativeLayout_style">
+
+        <TextView
+            style="@style/title_text_style"
+            android:text="账务" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="1dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_shouru"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/color_shouru"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_shouru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总收入：0.00元"
+                android:textColor="@color/color_white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_zhichu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_zhichu"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_zhichu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总支出：0.00元"
+                android:textColor="@color/color_white"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="1">
+
+
+        <ListView
+            android:id="@+id/lv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00111111"
+            android:dividerHeight="8dp">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/bt_addmoney"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:textSize="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape_title_color"
+            android:text="添加账单"
+            android:textColor="@color/color_white" />
+    </RelativeLayout>
+
+
+</LinearLayout>

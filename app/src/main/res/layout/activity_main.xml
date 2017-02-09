@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chuangshi.licai.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:gravity="center"
+            android:text="简报"
+            android:textColor="@color/main_r_button_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:gravity="center"
+            android:text="总管"
+            android:textColor="@color/main_r_button_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:gravity="center"
+            android:text="账务"
+            android:textColor="@color/main_r_button_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:gravity="center"
+            android:text="寡人"
+            android:textColor="@color/main_r_button_text_color" />
+    </RadioGroup>
+</LinearLayout>
